@@ -1,0 +1,201 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  background-image: url(../images/dream-pulse-header.jpg);
+
+  width: 100%;
+  height: 100vh;
+  /* position: fixed; */
+  background-position: fixed;
+}
+.main-text {
+  border: 5px solid white;
+  width: 40%;
+
+  color: black;
+  height: 400px;
+  background-color: white;
+  opacity: 0.5;
+  font-size: 18px;
+  font-weight: "Open Sans", Arial, Helvetica, sans-serif;
+  position: absolute;
+  right: 30px;
+  top: 100px;
+
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+}
+h2 {
+  color: #069;
+  opacity: 1px;
+  opacity: 5;
+  padding-bottom: 30px;
+  padding-top: 20px;
+}
+h2 + p {
+  padding-bottom: 30px;
+}
+.gaurav {
+  width: 30%;
+  position: fixed;
+  /* right: 0px; */
+  left: 0px;
+  height: 100%;
+  border: 1px solid black;
+  background-color: black;
+  opacity: 0.5;
+}
+.tm-brand-box {
+  box-sizing: content-box;
+  width: 100%;
+  max-width: 230px;
+  min-height: 160px;
+  color: white;
+
+  text-align: center;
+  margin: 70px auto 90px;
+}
+.tm-double-border-1,
+.tm-double-border-2 {
+  border: 1px solid #fff;
+  position: relative;
+}
+ul li {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  padding-top: 20px;
+}
+.about-us {
+  justify-content: end;
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+  width: 30%;
+  padding-top: 50px;
+  gap: 30px;
+  line-height: 30px;
+}
+.end {
+  display: flex;
+  justify-content: end;
+  gap: 50px;
+}
+.about-us i {
+  color: #069;
+}
+i + h3 {
+  color: #069;
+}
+
+.container-2 {
+  color: #069;
+
+  display: flex;
+  flex-direction: column;
+
+  border: 1px solid black;
+  width: 60%;
+  justify-content: end;
+}
+.ourwork {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+h4 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 25px;
+  padding-left: 20px;
+  color: #069;
+}
+.doggy {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+.work {
+  justify-content: end;
+  display: flex;
+  margin-right: 50px;
+}
+.OurClients {
+  display: flex;
+  justify-content: end;
+  /* padding-left: 100px; */
+  padding-top: 100px;
+  flex-direction: column;
+  /* border: 1px solid black; */
+  /* width: 50%; */
+  gap: 50px;
+}
+h4 + p {
+  font-size: 20px;
+  opacity: 0.5;
+}
+.container-3 {
+  display: flex;
+  justify-content: end;
+}
+.myob {
+  border: 1px solid black;
+  opacity: 0.5;
+  border-radius: 5%;
+  display: flex;
+  gap: 80px;
+  padding-right: 20px;
+}
+.myob1 {
+  /* border: 1px solid black; */
+  display: flex;
+  gap: 80px;
+  padding-right: 20px;
+}
+.maintext2 {
+  font-size: 20px;
+  border: 1px solid black;
+
+  height: 250px;
+  width: 500px;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: start;
+  padding-left: 50px;
+}
+.container-4 {
+  justify-content: center;
+  display: flex;
+
+  padding-left: 100px;
+  gap: 70px;
+  padding-top: 100px;
+  margin-left: 100px;
+}
+input {
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  padding-bottom: 0px;
+  margin-bottom: 50px;
+}
+.send {
+  padding-left: 10px;
+  width: 50px;
+  margin-left: 100px;
+}
+h5 {
+  color: #069;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+h5 + p {
+  padding-bottom: 20px;
+}
