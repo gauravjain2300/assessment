@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .mobile {
+        padding: 20px 40px;
+      }
+      .container {
+        margin: 0 auto;
+        justify-content: center;
+        border: 10px solid grey;
+        height: 500px;
+        width: 40%;
+        text-align: center;
+        background-color: black;
+        gap: 50px;
+        box-shadow: 1 rgb(21, 20, 20);
+      }
+      input {
+        padding: 20px 30px;
+        margin-bottom: 30px;
+        border: 3px solid gray;
+        box-shadow: burlywood;
+      }
+
+      #total {
+        padding: 40px 30px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        border: 3px solid grey;
+        /* box-shadow: 30px; */
+        text-shadow: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <input type="text" value="" id="mobile" />
+      <br />
+      <input type="text" value="" id="mobile-1" />
+      <br />
+
+      <button id="total" onclick="add()">+</button>
+      <button id="total" onclick="min()">-</button>
+      <button id="total" onclick="gaurav()">*</button>
+      <button id="total" onclick="gaurav()">/</button>
+
+      <br />
+      <input type="text" id="result" />
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path
+        fill="#0099ff"
+        fill-opacity="1"
+        d="M0,64L15,85.3C30,107,60,149,90,181.3C120,213,150,235,180,234.7C210,235,240,213,270,197.3C300,181,330,171,360,165.3C390,160,420,160,450,149.3C480,139,510,117,540,138.7C570,160,600,224,630,250.7C660,277,690,267,720,266.7C750,267,780,277,810,261.3C840,245,870,203,900,176C930,149,960,139,990,133.3C1020,128,1050,128,1080,160C1110,192,1140,256,1170,245.3C1200,235,1230,149,1260,133.3C1290,117,1320,171,1350,213.3C1380,256,1410,288,1425,304L1440,320L1440,320L1425,320C1410,320,1380,320,1350,320C1320,320,1290,320,1260,320C1230,320,1200,320,1170,320C1140,320,1110,320,1080,320C1050,320,1020,320,990,320C960,320,930,320,900,320C870,320,840,320,810,320C780,320,750,320,720,320C690,320,660,320,630,320C600,320,570,320,540,320C510,320,480,320,450,320C420,320,390,320,360,320C330,320,300,320,270,320C240,320,210,320,180,320C150,320,120,320,90,320C60,320,30,320,15,320L0,320Z"
+      ></path>
+    </svg>
+
+    <script>
+      alert("Calculater");
+      function add() {
+        let a = parseFloat(document.getElementById("mobile").value);
+        let b = parseFloat(document.getElementById("mobile-1").value);
+        let total = a + b;
+        document.getElementById("result").value = total;
+      }
+
+      function min() {
+        let a = parseFloat(document.getElementById("mobile").value);
+        let b = parseFloat(document.getElementById("mobile-1").value);
+        let total = a - b;
+        document.getElementById("result").value = total;
+      }
+
+      function gaurav() {
+        let a = parseFloat(document.getElementById("mobile").value);
+        let b = parseFloat(document.getElementById("mobile-1").value);
+        let total = a * b;
+        document.getElementById("result").value = total;
+      }
+      function gaurav() {
+        let a = parseFloat(document.getElementById("mobile").value);
+        let b = parseFloat(document.getElementById("mobile-1").value);
+        let total = a / b;
+        document.getElementById("result").value = total;
+      }
+    </script>
+  </body>
+</html>

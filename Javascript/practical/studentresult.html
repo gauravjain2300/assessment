@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        /* background-color: brown; */
+        background-image: url(../images/pexels-philippe-donn-1114690.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        border: 10px solid black;
+        color: white;
+        font-weight: 900;
+        height: 90vh;
+        text-align: center;
+      }
+      #Marks {
+        width: 50%;
+        height: 50px;
+        background-color: black;
+        border: 5px solid white;
+        color: white;
+        font-weight: 900;
+      }
+
+      button {
+        width: 100px;
+        border-radius: 20px;
+        height: 50px;
+        background-color: black;
+        color: white;
+        border: 3px solid white;
+        /* padding-top: 50px; */
+        margin-top: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Student Result</h1>
+
+      <input type="text" value="" id="Marks" placeholder="Marks" />
+      <br />
+      <button id="result" onclick="pass()">show</button>
+    </div>
+
+    <script>
+      function pass() {
+        let a = document.getElementById("Marks").value;
+
+        // document.getElementById("result").value = total;
+
+        // document.getElementById("Marks").value;
+
+        if (a >= 33 && a <= 50) {
+          alert("Pass");
+        } else if (a >= 51 && a <= 60) {
+          alert("third");
+        } else if (a >= 61 && a <= 70) {
+          alert("second class");
+        } else if (a >= 71 && a <= 80) {
+          alert("First class");
+        } else if (a >= 81 && a <= 90) {
+          alert("Distinction class");
+        } else if (a >= 81 && a <= 90) alert("Distinction class+");
+        else if (a >= 91 && a <= 100) alert("Distinction class++");
+        else {
+          alert("Try again");
+        }
+      }
+    </script>
+  </body>
+</html>

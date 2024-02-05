@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+          form {
+            /* text-align: center; */
+
+            padding-top: 20px;
+            width: 50%;
+
+            /* background-image: url(../images/symbol-scatter-haikei.png); */
+            background-size: cover;
+            height: 500px;
+          }
+          fieldset {
+            /* color: white; */
+            font-weight: 900;
+            height: 300px;
+          }
+          label {
+            /* color: white; */
+            font-weight: 900;
+          }
+
+          input {
+            margin-top: 50px;
+          }
+          button {
+            margin-top: 20px;
+          }
+          span {
+            color: red;
+          }
+        </style>
+      </head>
+      <body>
+        <div>
+          <div>
+            <form action="" onclick="validateFormname">
+              <fieldset>
+                <legend>Personal informaion</legend>
+                <label for="">User name:-</label>
+                <input
+                  type="text"
+                  id="username"
+                  placeholder="Username"
+                  value=""
+                  onblur="validateFormname()"
+                />
+                <span id="mobile"></span>
+                <br />
+
+                <label for="">Emailid:-</label>
+                <input
+                  type="text"
+                  id="emailid"
+                  placeholder="Emailid"
+                  value=""
+                  onblur="validateFormname()"
+                />
+                <span id="mobile-2"></span>
+                <br />
+                <label for="">Password:-</label>
+                <input
+                  type="password"
+                  id="password"
+                  placeholder="Password"
+                  value=""
+                  onblur="validateFormname()"
+                />
+                <span id="mobile-3"></span>
+                <br />
+
+                <label for="">phone no:</label>
+                <input
+                  type="number"
+                  id="number"
+                  placeholder="NUmber"
+                  value=""
+                  onblur="validateFormname()"
+                />
+                <span id="mobile-4"></span>
+                <br />
+                <button>sumbit</button>
+                <button class="Clear">Reset</button>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+
+        <script>
+          function validateFormname() {
+            let Username = document.getElementById("username").value;
+            let Useremail = document.getElementById("emailid").value;
+            let userpassword = document.getElementById("password").value;
+            let phonenumber = document.getElementById("number").value;
+            if (Username == "") {
+              document.getElementById("mobile").innerText =
+                "*please fill your name";
+            }
+            if (Useremail == "") {
+              document.getElementById("mobile-2").innerText =
+                "*pleasse fill the email id";
+            }
+            if (userpassword == "") {
+              document.getElementById("mobile-3").innerText =
+                "*pleasse fill the password";
+            }
+            if (phonenumber == "") {
+              document.getElementById("mobile-4").innerText =
+                "*Please enter your name";
+            } else {
+            }
+          }
+        </script>
+      </body>
+    </html>
+  </body>
+</html>
